@@ -37,7 +37,7 @@
         }
 
 
-        
+
 
         /* Smooth Scroll Snap */
         .container {
@@ -192,7 +192,7 @@
         // Start music on first interaction
         let musicStarted = false;
         function playMusic() {
-            if (musicStarted) {
+            if (!musicStarted) {
                 const music = document.getElementById('bg-music');
                 music.play().catch(e => console.log("Audio waiting for interaction"));
                 musicStarted = true;
